@@ -1,0 +1,17 @@
+[project]
+name = "oaf-feature-crypto"
+version = "1.0.0"
+description = "FWXB feature.bin encrypt/decrypt"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+oaf-feature-crypto = "oaf_feature_crypto.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["oaf_feature_crypto*"]
